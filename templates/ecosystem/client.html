@@ -58,6 +58,7 @@
                     {% for feature, supported in features %}
                         <li class="{{ supported }}">
                             {{ clients::feature_label(feature_name=feature) | trim }}
+                            <img src="/assets/circle_question.svg" title="{{ clients::feature_description(feature_name=feature) | trim }}">
                         </li>
                     {% endfor %}
                 </ul>
